@@ -35,12 +35,12 @@ export default function Page() {
           >
             {/* Título principal */}
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-light text-center mb-5 sm:mb-6 text-amber-900">
-              Margarita
+              Sobre las margaritas para mi Belucita
             </h1>
 
             {/* Subtítulo */}
             <p className="text-base sm:text-lg md:text-xl text-center text-amber-700 mb-10 sm:mb-12 max-w-2xl mx-auto font-light leading-relaxed">
-              Un presente con significado: porque hoy es el día de celebrar las flores en Argentina
+              Un presente con un significado distinto al que esperabas :) espero que te guste y que lo disfrutes, porque está hecho con mucho amorrrrrrrrr
             </p>
 
             {/* Flores animadas */}
@@ -61,7 +61,7 @@ export default function Page() {
 
             {/* Botón de scroll */}
             <div className="text-center">
-              <p className="text-sm text-amber-600 mb-4">Descubre más</p>
+              <p className="text-sm text-amber-600 mb-4">Seguí scrolleando</p>
               <div className="flex justify-center">
                 <svg
                   className="w-6 h-6 text-amber-600 animate-pulse"
@@ -77,99 +77,291 @@ export default function Page() {
         </section>
 
         {/* Datos técnicos */}
-        <section className="py-14 sm:py-20 px-4 sm:px-6">
+        <section className="relative py-16 sm:py-24 px-4 sm:px-6">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-amber-900 text-center mb-16">
-              Datos Técnicos
-            </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {[
-                { label: 'Nombre científico', value: 'Bellis perennis' },
-                { label: 'Familia botánica', value: 'Asteraceae' },
-                { label: 'Origen', value: 'Europa y Asia occidental' },
-                { label: 'Altura', value: '10-30 cm' },
-                { label: 'Ciclo de vida', value: 'Perenne' },
-                { label: 'Floración', value: 'Primavera y verano' },
-                { label: 'Pétalos característicos', value: '+100 flores por tallo' },
-                { label: 'Significado', value: 'Inocencia, pureza y amor verdadero' },
-              ].map((item, i) => (
-                <div
-                  key={i}
-                  className={`bg-white/70 backdrop-blur p-6 rounded-lg border border-amber-200/50 transform transition-all duration-700 hover:shadow-lg hover:bg-white/90 ${
-                    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-                  }`}
-                  style={{
-                    transitionDelay: `${i * 100}ms`,
-                  }}
-                >
-                  <p className="text-sm text-amber-600 font-semibold mb-2">{item.label}</p>
-                  <p className="text-xl text-amber-900">{item.value}</p>
+            {/* Encabezado */}
+            <div
+              className={`text-center mb-12 sm:mb-16 transform transition-all duration-700 ${
+                isVisible
+                  ? 'opacity-100 translate-y-0'
+                  : 'opacity-0 translate-y-4'
+              }`}
+            >
+              <span className="inline-flex items-center gap-2 text-xs sm:text-sm uppercase tracking-[0.25em] text-amber-600 font-semibold mb-4">
+                <span className="h-px w-8 bg-amber-300" />
+                Ficha botánica
+                <span className="h-px w-8 bg-amber-300" />
+              </span>
+
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-amber-900">
+                Conocé a la margarita
+              </h2>
+
+              <p className="max-w-2xl mx-auto mt-4 text-amber-700/80 leading-relaxed">
+                Pequeña, resistente y mucho más compleja de lo que parece.
+              </p>
+            </div>
+
+            {/* Ficha principal */}
+            <div
+              className={`relative overflow-hidden rounded-2xl border border-amber-200/60
+                bg-white/60 backdrop-blur-md shadow-sm
+                transition-all duration-700
+                hover:shadow-xl hover:bg-white/75
+                ${
+                  isVisible
+                    ? 'opacity-100 translate-y-0'
+                    : 'opacity-0 translate-y-6'
+                }`}
+            >
+              {/* Decoración */}
+              <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-amber-100/50 blur-2xl pointer-events-none" />
+              <div className="absolute -left-20 -bottom-20 h-44 w-44 rounded-full bg-yellow-100/40 blur-3xl pointer-events-none" />
+
+              <div className="relative p-6 sm:p-8">
+
+                {/* Nombre científico */}
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-7 mb-2 border-b border-amber-200/50">
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.2em] text-amber-500 font-semibold mb-2">
+                      Especie
+                    </p>
+                    <h3 className="text-2xl sm:text-3xl font-light italic text-amber-950">
+                      Bellis perennis
+                    </h3>
+                  </div>
+
+                  <div className="flex items-center gap-2 self-start sm:self-auto px-4 py-2 rounded-full bg-amber-100/60 border border-amber-200/60">
+                    <Flower2 className="w-4 h-4 text-amber-600" strokeWidth={1.5} />
+                    <span className="text-sm text-amber-800">
+                      Asteraceae
+                    </span>
+                  </div>
                 </div>
-              ))}
+
+                {/* Datos */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8">
+                  {[
+                    {
+                      label: 'Origen',
+                      value: 'Europa y Asia occidental',
+                    },
+                    {
+                      label: 'Altura',
+                      value: '10–30 cm',
+                    },
+                    {
+                      label: 'Ciclo de vida',
+                      value: 'Perenne',
+                    },
+                    {
+                      label: 'Floración',
+                      value: 'Primavera y verano',
+                    },
+                    {
+                      label: 'Inflorescencia',
+                      value: 'Numerosas flores diminutas',
+                    },
+                    {
+                      label: 'Significado',
+                      value: 'Inocencia, pureza y amor verdadero',
+                    },
+                  ].map((item, i) => (
+                    <div
+                      key={i}
+                      className={`group flex items-center justify-between gap-4 py-5 border-b border-amber-100/70
+                        transition-all duration-500 hover:px-2
+                        ${
+                          isVisible
+                            ? 'opacity-100 translate-y-0'
+                            : 'opacity-0 translate-y-3'
+                        }`}
+                      style={{
+                        transitionDelay: `${150 + i * 80}ms`,
+                      }}
+                    >
+                      <span className="text-sm text-amber-600/80">
+                        {item.label}
+                      </span>
+
+                      <span className="text-right text-base sm:text-lg text-amber-950 font-medium group-hover:text-amber-700 transition-colors">
+                        {item.value}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Pie de ficha */}
+                <div className="mt-7 flex items-center gap-3 text-sm text-amber-700/70">
+                  <div className="h-8 w-8 rounded-full bg-amber-100 flex items-center justify-center flex-shrink-0">
+                    <Sparkles className="w-4 h-4 text-amber-600" strokeWidth={1.5} />
+                  </div>
+                  <p>
+                    Una flor aparentemente sencilla con una estructura botánica
+                    sorprendentemente compleja.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Curiosidades */}
-        <section className="py-14 sm:py-20 px-4 sm:px-6 bg-white/30 backdrop-blur-sm">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-amber-900 text-center mb-16">
-              Curiosidades Fascinantes
-            </h2>
 
-            <div className="space-y-6">
+        {/* Curiosidades */}
+        <section className="relative py-16 sm:py-24 px-4 sm:px-6 bg-white/30 backdrop-blur-sm">
+          <div className="max-w-5xl mx-auto">
+
+            {/* Encabezado */}
+            <div
+              className={`text-center mb-12 sm:mb-16 transform transition-all duration-700 ${
+                isVisible
+                  ? 'opacity-100 translate-y-0'
+                  : 'opacity-0 translate-y-4'
+              }`}
+            >
+              <span className="inline-flex items-center gap-2 text-xs sm:text-sm uppercase tracking-[0.25em] text-amber-600 font-semibold mb-4">
+                <span className="h-px w-8 bg-amber-300" />
+                Pequeños secretos
+                <span className="h-px w-8 bg-amber-300" />
+              </span>
+
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-amber-900">
+                Curiosidades de la margarita
+              </h2>
+
+              <p className="max-w-2xl mx-auto mt-4 text-amber-700/80 leading-relaxed">
+                Algunas cosas que probablemente no sabías sobre esta pequeña flor.
+              </p>
+            </div>
+
+            {/* Grid de curiosidades */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
               {[
                 {
                   icon: Flower2,
-                  title: 'Múltiples flores en una',
-                  desc: 'Lo que ves como una sola flor es en realidad 100+ flores diminutas agrupadas (es una inflorescencia)',
+                  number: '01',
+                  title: 'Muchas flores en una',
+                  desc: 'Lo que parece una sola flor es en realidad una inflorescencia formada por numerosas flores diminutas.',
                 },
                 {
                   icon: Droplets,
-                  title: 'Resistencia natural',
-                  desc: 'Las margaritas pueden sobrevivir en casi cualquier clima y terreno, lo que las hace símbolo de resistencia',
+                  number: '02',
+                  title: 'Pequeña pero resistente',
+                  desc: 'Puede crecer en una gran variedad de ambientes y tolerar condiciones que otras flores encuentran difíciles.',
                 },
                 {
                   icon: Sun,
-                  title: 'Responden al sol',
-                  desc: 'Abren sus pétalos durante el día (heliotropismo) y se cierran al atardecer',
+                  number: '03',
+                  title: 'Sigue la luz',
+                  desc: 'Sus flores responden a los cambios de luz: suelen abrirse durante el día y cerrarse cuando llega la noche.',
                 },
                 {
                   icon: Heart,
-                  title: 'Comestibles y medicinales',
-                  desc: 'Usadas en la medicina tradicional y actualmente sus pétalos se utilizan en cocina gourmet',
+                  number: '04',
+                  title: 'También se utiliza en cocina',
+                  desc: 'Sus flores y hojas tiernas han sido utilizadas en preparaciones culinarias y en la medicina tradicional.',
                 },
                 {
                   icon: Flag,
-                  title: 'Tradición argentina',
-                  desc: 'El 21 de septiembre se celebra el "Día de la Primavera" regalando flores amarillas, simbolizando alegría y renovación',
+                  number: '05',
+                  title: 'Un símbolo de primavera',
+                  desc: 'En Argentina, las flores forman parte de las celebraciones y tradiciones asociadas a la llegada de la primavera.',
                 },
                 {
                   icon: Sparkles,
-                  title: 'Significados especiales',
-                  desc: 'Flores amarillas = felicidad; blancas = inocencia; rosadas = admiración. Juntas = amor verdadero',
+                  number: '06',
+                  title: 'Un lenguaje propio',
+                  desc: 'A lo largo del tiempo, las margaritas se asociaron con ideas como inocencia, pureza, alegría y amor.',
                 },
               ].map((item, i) => (
                 <div
                   key={i}
-                  className={`flex gap-4 p-6 bg-white/60 backdrop-blur rounded-lg border border-amber-200/30 transform transition-all duration-700 hover:bg-white/80 ${
-                    isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'
-                  }`}
+                  className={`group relative overflow-hidden p-6 sm:p-7 rounded-2xl
+                    bg-white/55 backdrop-blur-md
+                    border border-amber-200/50
+                    transition-all duration-500
+                    hover:-translate-y-1 hover:bg-white/80 hover:shadow-xl
+                    ${
+                      isVisible
+                        ? 'opacity-100 translate-y-0'
+                        : 'opacity-0 translate-y-5'
+                    }`}
                   style={{
-                    transitionDelay: `${i * 150}ms`,
+                    transitionDelay: `${i * 100}ms`,
                   }}
                 >
-                  <div className="text-amber-500 flex-shrink-0" aria-hidden="true">
-                    <item.icon className="h-9 w-9" strokeWidth={1.5} />
+                  {/* Número decorativo */}
+                  <span className="absolute top-5 right-6 text-5xl font-light text-amber-100/80 select-none transition-colors duration-500 group-hover:text-amber-200/80">
+                    {item.number}
+                  </span>
+
+                  {/* Icono */}
+                  <div className="relative mb-6">
+                    <div className="w-12 h-12 rounded-xl bg-amber-100/70 border border-amber-200/60 flex items-center justify-center transition-all duration-500 group-hover:bg-amber-200/70 group-hover:scale-105">
+                      <item.icon
+                        className="w-6 h-6 text-amber-600"
+                        strokeWidth={1.5}
+                      />
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-amber-900 mb-2">{item.title}</h3>
-                    <p className="text-amber-700">{item.desc}</p>
+
+                  {/* Contenido */}
+                  <div className="relative">
+                    <h3 className="text-lg sm:text-xl font-semibold text-amber-950 mb-3">
+                      {item.title}
+                    </h3>
+
+                    <p className="text-sm sm:text-base leading-relaxed text-amber-700/85">
+                      {item.desc}
+                    </p>
                   </div>
+
+                  {/* Línea inferior */}
+                  <div className="absolute bottom-0 left-6 right-6 h-px bg-gradient-to-r from-transparent via-amber-300/60 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
                 </div>
               ))}
             </div>
+
+            {/* Dato destacado */}
+            <div
+              className={`relative mt-8 sm:mt-10 overflow-hidden rounded-2xl
+                border border-amber-300/50
+                bg-gradient-to-br from-amber-50/80 via-white/60 to-yellow-50/70
+                backdrop-blur-md
+                transition-all duration-700
+                ${
+                  isVisible
+                    ? 'opacity-100 translate-y-0'
+                    : 'opacity-0 translate-y-5'
+                }`}
+              style={{
+                transitionDelay: '700ms',
+              }}
+            >
+              <div className="absolute -right-10 -top-10 w-32 h-32 rounded-full bg-amber-200/20 blur-2xl" />
+
+              <div className="relative flex flex-col sm:flex-row items-center gap-5 p-6 sm:p-8 text-center sm:text-left">
+                <div className="flex-shrink-0 w-14 h-14 rounded-full bg-white/80 border border-amber-200 flex items-center justify-center shadow-sm">
+                  <Sparkles
+                    className="w-7 h-7 text-amber-500"
+                    strokeWidth={1.5}
+                  />
+                </div>
+
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-amber-500 font-semibold mb-1">
+                    ¿Sabías que...?
+                  </p>
+
+                  <p className="text-base sm:text-lg text-amber-900 leading-relaxed">
+                    La margarita que ves como una única flor está formada por
+                    muchas flores individuales trabajando juntas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </section>
 
