@@ -369,7 +369,7 @@ export default function Page() {
               <p className="text-sm uppercase tracking-[0.22em] text-amber-600 mb-3">Tres momentos para guardar</p>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-amber-900">Un pequeño álbum para vos</h2>
               <p className="mt-4 max-w-xl mx-auto text-base sm:text-lg leading-relaxed text-amber-700">
-                Después podés reemplazar cada ruta por nuestras fotos favoritas y hacer de este rincón algo todavía más nuestro.
+                Todos los recuerdos que tenemos juntos componen esta flor hermosa que es nuestra relacion <3
               </p>
             </div>
 
