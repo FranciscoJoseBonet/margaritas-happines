@@ -95,11 +95,11 @@ export default function Page() {
               </span>
 
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-amber-900">
-                Conocé a la margarita
+                Para que conozcas un poco más a la margarita
               </h2>
 
               <p className="max-w-2xl mx-auto mt-4 text-amber-700/80 leading-relaxed">
-                Pequeña, resistente y mucho más compleja de lo que parece.
+                Pequeña, resistente y mucho más compleja de lo que parece (aprendí mucho realmente)
               </p>
             </div>
 
@@ -199,7 +199,11 @@ export default function Page() {
                   </div>
                   <p>
                     Una flor aparentemente sencilla con una estructura botánica
-                    sorprendentemente compleja.
+                    sorprendentemente compleja. Podría trazar similitudes con nuestra relación:
+                     simple a la vista, pero con capas de significado y belleza, 
+                     siempre saciando nuestra sed de saber entre nosotros y sobre todo es amarilla, 
+                     que simboliza principalmente la luz del sol, la energía, la alegría y el optimismo 
+                     (soy tu margarita y vos la mía)
                   </p>
                 </div>
               </div>
@@ -231,7 +235,7 @@ export default function Page() {
               </h2>
 
               <p className="max-w-2xl mx-auto mt-4 text-amber-700/80 leading-relaxed">
-                Algunas cosas que probablemente no sabías sobre esta pequeña flor.
+                Algunas cosas que probablemente no sabías sobre esta pequeñita florecilla y podes significar en tu vida como lo hice yo cuando me puse a estudiar y leer todo esto...
               </p>
             </div>
 
@@ -240,39 +244,33 @@ export default function Page() {
               {[
                 {
                   icon: Flower2,
-                  number: '01',
                   title: 'Muchas flores en una',
-                  desc: 'Lo que parece una sola flor es en realidad una inflorescencia formada por numerosas flores diminutas.',
+                  desc: 'Lo que parece una sola flor es en realidad una inflorescencia formada por muchas flores muy pequeñitas',
                 },
                 {
                   icon: Droplets,
-                  number: '02',
                   title: 'Pequeña pero resistente',
-                  desc: 'Puede crecer en una gran variedad de ambientes y tolerar condiciones que otras flores encuentran difíciles.',
+                  desc: 'Puede crecer en una gran variedad de ambientes y tolerar condiciones que otras flores encuentran difíciles... jajaja se explica solo no?',
                 },
                 {
                   icon: Sun,
-                  number: '03',
                   title: 'Sigue la luz',
-                  desc: 'Sus flores responden a los cambios de luz: suelen abrirse durante el día y cerrarse cuando llega la noche.',
+                  desc: 'Sus flores responden a los cambios de luz (LITERALMENTE VOS): suelen abrirse durante el día y cerrarse cuando llega la oscuridad',
                 },
                 {
                   icon: Heart,
-                  number: '04',
                   title: 'También se utiliza en cocina',
-                  desc: 'Sus flores y hojas tiernas han sido utilizadas en preparaciones culinarias y en la medicina tradicional.',
+                  desc: 'Sus flores y hojas tiernas han sido utilizadas en preparaciones culinarias y en la medicina tradicional... aunque no te recomiendo que la comas jsjsjs',
                 },
                 {
                   icon: Flag,
-                  number: '05',
-                  title: 'Un símbolo de primavera',
-                  desc: 'En Argentina, las flores forman parte de las celebraciones y tradiciones asociadas a la llegada de la primavera.',
+                  title: 'Las margaritas son muy importantes para los polinizadores',
+                  desc: 'Sus flores son una fuente de alimento para abejas, mariposas y otros insectos polinizadores, especialmente durante los meses en que hay menos flores disponibles, basicamente tu resiliencia te hace destacar, aunque no lo veas',
                 },
                 {
                   icon: Sparkles,
-                  number: '06',
                   title: 'Un lenguaje propio',
-                  desc: 'A lo largo del tiempo, las margaritas se asociaron con ideas como inocencia, pureza, alegría y amor.',
+                  desc: 'A lo largo del tiempo, las margaritas se asociaron con ideas como inocencia, pureza, alegría y amor :)',
                 },
               ].map((item, i) => (
                 <div
@@ -355,8 +353,7 @@ export default function Page() {
                   </p>
 
                   <p className="text-base sm:text-lg text-amber-900 leading-relaxed">
-                    La margarita que ves como una única flor está formada por
-                    muchas flores individuales trabajando juntas.
+                    Mucho antes de las rosas, la margarita ya era una flor de amor. En la poesía medieval, fue símbolo de una belleza sencilla e idealizada; poetas como Chaucer escribieron sobre ella como una flor capaz de despertar un amor profundo y duradero
                   </p>
                 </div>
               </div>
@@ -378,9 +375,9 @@ export default function Page() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-7">
               {[
-                { src: '/daisy-meadow.png', alt: 'Margaritas iluminadas por el sol', title: 'Donde todo florece', note: 'Un lugar para volver' },
-                { src: '/daisy-meadow.png', alt: 'Pradera suave llena de margaritas', title: 'Nuestra primavera', note: 'Un instante que queda' },
-                { src: '/daisy-meadow.png', alt: 'Detalle de margaritas blancas y amarillas', title: 'Siempre vos', note: 'Mi parte favorita del día' },
+                { src: '/FranBelu1.jpeg', alt: 'Margaritas iluminadas por el sol', title: 'Donde todo florece', note: 'Sos un lugar para volver' },
+                { src: '/FranBelu2.jpeg', alt: 'Pradera suave llena de margaritas', title: 'Nuestra primavera', note: 'Sos siempre un instante que queda' },
+                { src: '/FranBelu3.jpeg', alt: 'Detalle de margaritas blancas y amarillas', title: 'Siempre vos', note: 'Sos mi parte favorita de la semana' },
               ].map((photo, i) => (
                 <figure
                   key={photo.title}
@@ -419,19 +416,19 @@ export default function Page() {
 
             {/* Contenido de la poesía */}
             <div className="relative z-10">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-white mb-12">Poesía de Flores</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-white mb-12">Riconcito de poesía</h2>
 
               <div className="space-y-5 sm:space-y-6 text-white text-base sm:text-lg md:text-xl leading-relaxed font-light">
                 <p>En cada pétalo una promesa,</p>
                 <p>En cada flor un corazón,</p>
                 <p>Las margaritas son poesía</p>
-                <p>Escrita en la primavera del amor.</p>
+                <p>Escrita en la primavera del amor</p>
 
                 <div className="py-6 border-t border-b border-white/30">
                   <p>Amarillas como el sol al amanecer,</p>
                   <p>Blancas como la pureza de tu mirada,</p>
                   <p>Nacen donde menos se espera</p>
-                  <p>Y florecen con la fuerza de la vida.</p>
+                  <p>Y florecen con la fuerza de la vida</p>
                 </div>
 
                 <p>Hoy te regalo lo que la tierra regala:</p>
@@ -439,7 +436,7 @@ export default function Page() {
                 <p>Resistencia silenciosa,</p>
                 <p>Y el eterno simbolismo</p>
                 <p>De que los sueños más simples</p>
-                <p>Son los más hermosos.</p>
+                <p>Son los más hermosos</p>
               </div>
             </div>
           </div>
@@ -449,18 +446,18 @@ export default function Page() {
         <section className="py-14 sm:py-20 px-4 sm:px-6 bg-gradient-to-b from-transparent to-amber-50">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-light text-amber-900 mb-8">
-              Un gesto con significado
+              Un gestito distinto pero florecido desde lo mas profundo de mi amor para tiii :)
             </h2>
 
             <p className="text-lg text-amber-700 mb-8 leading-relaxed">
-              No puedo regalarte flores amarillas, pero te regalo la historia de lo que representan. La margarita
-              que hoy lleva tu nombre es símbolo de lo que somos: simples, hermosos, resistentes y capaces de florecer
-              en cualquier momento.
+              No puedo regalarte flores amarillas, pero te regalo la historia de lo que representan, datitos curiosos y mi tiempo haciendo el regalito. La margarita
+              que hoy te regalo de esta forma es símbolo de lo que somos: simples, hermosos, resistentes y capaces de florecer
+              en cualquier momento, te amo Belu, gracias por ser mi margarita y por hacer que la vida sea más bonita a tu lado. 
             </p>
 
             <p className="text-lg text-amber-700 leading-relaxed">
-              Como esta flor, tu existencia en mi vida es renovación constante. Cada día es primavera cuando estoy
-              contigo.
+              Como esta flor, tu existencia en mi vida es iluminadora. Cada día es primavera cuando estoy
+              con vos. Regalo de Fran y Josecito para vos
             </p>
 
             {/* Flores finales animadas */}
