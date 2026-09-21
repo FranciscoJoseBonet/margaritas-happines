@@ -198,12 +198,11 @@ export default function Page() {
                     <Sparkles className="w-4 h-4 text-amber-600" strokeWidth={1.5} />
                   </div>
                   <p>
-                    Una flor aparentemente sencilla con una estructura botánica
-                    sorprendentemente compleja. Podría trazar similitudes con nuestra relación:
-                     simple a la vista, pero con capas de significado y belleza, 
-                     siempre saciando nuestra sed de saber entre nosotros y sobre todo es amarilla, 
-                     que simboliza principalmente la luz del sol, la energía, la alegría y el optimismo 
-                     (soy tu margarita y vos la mía)
+                    Una flor aparentemente sencilla, pero llena de pequeños detalles que la hacen especial.
+
+                    Quizás nuestra relación sea un poco así: simple a primera vista, pero llena de historias, aprendizajes y pequeñas cosas que solo nosotros conocemos.
+
+                    Porque, al final, soy tu margarita y vos sos la mía. 🌼
                   </p>
                 </div>
               </div>
